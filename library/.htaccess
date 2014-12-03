@@ -1,0 +1,2 @@
+# Keep browser requests out
+Deny from all
