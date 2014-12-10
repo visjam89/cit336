@@ -2,14 +2,16 @@
 // Create the navigation bar here meeting the requirements listed in step 2
   $locations = array('Europe', 'Africa', 'North America', 'Antarctica', 'Asia', 'South America', 'Oceania');
   sort($locations);
-  array_unshift($locations, "Home");
+  array_unshift($locations, 'Home');
   
-  for($i = 0; $i >= count($locations); $i++) {
-     
-      $item = "<li>$locations[i]</li>";
-      return $item;
+
+  
+  foreach ($locations as $value) {
+        $list .= "<li><a href='index.php?action=$value' title='Go to $value page'> $value</a></li>";
+             
   }
- $navbar= "<ul><?php$item?></ul>"; 
+ $navbar = "<ul>$list</ul>";
+  
   ?>
 
 <!DOCTYPE html>
