@@ -1,27 +1,26 @@
-<?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-?>
-
+<!DOCTYPE html>
 <html>
 <body>
-    <form action='index.php' method='post'>
-        <fieldset>
+    <form role="form" action='index.php' method='post'>
+        <div class="form-group">
         <label for='firstName'>First Name:</label>
-        <input type ='text' name='fistName' id='firstName' value='<?php $firstname ?>'><br>
-        <label>Last Name:</label>
-        <input type ='text' name='lastName'value='<?php $lastname ?>'><br>
-        <label>Email Address:</label>
-        <input type ='text' name='emailAddress'value='<?php $emailaddress ?>'><br>
-        <label>Password:</label>
-        <input type ='password' name='password'value='<?php $password ?>'><br>
+        <input type ='text' class="form-control" name='fistName' id='firstName' value='<?php $firstname ?>' placeholder="First Name">
+        </div>
+        <div class="form-group">
+             <label for="lastName">Last Name:</label>
+             <input type ='text' class="form-control" name='lastName' value='<?php $lastname ?>' placeholder="Last Name">
+        </div>
+        <div class="form-group">
+        <label for="email" >Email Address:</label>
+        <input type ='email' class="form-control" name='emailAddress' value='<?php $emailaddress ?>' placeholder="Email Address">
+        </div>
+        <div class="form-group">
+        <label for="password">Password:</label>
+        <input type ='password' class="form-control" name='password' value='<?php $password ?>' placeholder="Password">
         <label>Submit</label>
         <input type="submit" name='action' value="UpdSubmit">
-        </fieldset>
+        </div>
     </form>
 </body>
 

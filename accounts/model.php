@@ -5,7 +5,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-require $_SERVER['DOCUMENT_ROOT'] . '/library/library.php';
+require $_SERVER['DOCUMENT_ROOT'] . '../library/library.php';
 
 function getCustomers() {
     $connection = conGrt2User();

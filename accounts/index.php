@@ -1,11 +1,11 @@
 <?php 
-//session_start();
+session_start();
 /* 
  * Account Controller
  
  */
 // do update, do delete, do login
-require('model.php');
+require 'model.php';
 
 if(isset($_POST['action'])){
     $submit= $_POST['action'];
@@ -19,7 +19,7 @@ switch($submit) {
         addCustomer($firstname, $lastname, $emailaddress, $password);
         break;
     case 'RegForm':
-        include('register.php');
+        include'register.php';
         break;
     case 'UpdSubmit':
         break;
@@ -27,7 +27,7 @@ switch($submit) {
         $custID = $_POST['cust'];
         $customer = getCustomer($custID);
         $title = 'Update';
-        include('update.php');
+        include'update.php';
         break;
     case 'DelSubmit':
         break;
@@ -37,12 +37,12 @@ switch($submit) {
         $custID = $_POST['cust'];
         $customer = getCustomer($custID);
         $title = 'Delete';
-        include('delete.php');
+        include'delete.php';
         break;
     case 'Getcustomers':
         $customers = getCustomers();
         $title = 'Customers';
-        include('customer.php');
+        include'customer.php';
         break;
     case 'login';
         break;
@@ -57,11 +57,12 @@ switch($submit) {
     
 
 
-if($$submit == 'Register')
-$firstname = $_POST['firstname'];
-$lastname = $_POST['lastname']; 
-$emailaddress = $_POST['emailAddress'];
-$password = $_POST['password'];
+//if($$submit == 'Register')
+//$firstname = $_POST['firstname'];
+//$lastname = $_POST['lastname']; 
+//$emailaddress = $_POST['emailAddress'];
+//$password = $_POST['password'];
+
 
 
 

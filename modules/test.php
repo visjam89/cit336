@@ -6,22 +6,11 @@
  * and open the template in the editor.
  */
 
-$letters= array('a','b','e','d');
+include '../library/library.php';
+$con = conGrt2Admin();
 
-//1
-array_push($letters, 'c');
-
-//2
-sort($letters);
-
-//3
-array_unshift($letters,'z');
-print_r($letters[0]);
-
-$letter[0] = 'p';
-
-
-
-
-
-
+if($con) {
+    echo "connection works";
+}else {
+    echo "connection failed.";
+}

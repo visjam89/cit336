@@ -8,17 +8,14 @@ and open the template in the editor.
     Author     : Travis
 */
 
-.navbar-static-top {
-    background-color: #333;
-    
-        
-}
-.navbar-default .navbar-brand {
-    color:#fff;
+body {
+    background-color: #000;
 }
 
-.navbar-default .navbar-nav>li>a {
-    color: #fff;
+.main {
+    background-color: #fff;
 }
+
+
 
 
