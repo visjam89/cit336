@@ -19,9 +19,9 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blogs <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Family Blog</a></li>
-                <li><a href="index.php?action=tjsblog" title='Go to <?php $title ?> page'>TJ's Blog</a></li>
-                <li><a href="#">Calli's Blog</a></li>
+                <li><a href="index.php?action=familyblog" title="Go to Calli's Blog page">Family Blog</a></li>
+                <li><a href="index.php?action=tjsblog" title="Go to TJ's Blog page">TJ's Blog</a></li>
+                <li><li><a href="index.php?action=callisblog" title="Go to Calli's Blog page">Calli's Blog</a></li>
 <!--                <li class="divider"></li>-->
 <!--                <li class="dropdown-header">Nav header</li>
                 <li><a href="#">Separated link</a></li>
